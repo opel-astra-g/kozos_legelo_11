@@ -1,0 +1,85 @@
+:root {
+    --ink: #24372d;
+    --green: #2c6e50;
+    --dark: #174b38;
+    --mint: #e8f3df;
+    --cream: #f7f7ee;
+    --line: #d6e1d1;
+    --orange: #d77939;
+    --white: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: var(--cream);
+}
+
+main {
+    max-width: 1000px;
+    margin-inline: auto;
+}
+
+/* Első nav elem formázás eleje*/
+nav:first-child {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo {
+    background-color: rgb(144, 255, 144);
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    max-width: 50px;
+    max-height: 50px;
+    aspect-ratio: 1/1;
+}
+
+nav:first-child div {
+    display: flex;
+    gap: 10px;
+}
+
+nav:first-child div p {
+    white-space: nowrap;
+}
+
+nav:first-child div ul {
+    display: flex;
+    gap: 10px;
+    list-style-type: none;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav:first-child div ul li a {
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 10px;
+}
+
+nav:first-child div ul li a:hover {
+    background-color: black;   
+    border-radius: 10px;
+    color: white;
+}
+/* Első nav elem formázás vége*/
+
+header {
+    display: flex;
+    background-color: var(--ink);
+    color: white;
+    
+}
