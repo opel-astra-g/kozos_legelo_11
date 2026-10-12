@@ -53,6 +53,7 @@ nav:first-child div {
 
 nav:first-child div p {
     white-space: nowrap;
+    align-self: center;
 }
 
 nav:first-child div ul {
@@ -77,9 +78,59 @@ nav:first-child div ul li a:hover {
 }
 /* Első nav elem formázás vége*/
 
+/* Header formázás eleje */
 header {
     display: flex;
     background-color: var(--ink);
     color: white;
-    
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 40px;
+    gap: 20px;
+}
+
+header p:first-child {
+    color: rgb(144, 255, 144);
+}
+
+header #koc {
+    border: 2px solid rgb(144, 255, 144);
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #395c49;
+}
+
+header div ul {
+    list-style-type: none;
+    color: rgb(144, 255, 144);
+    font-weight: 900;
+    font-size: 25px;
+}
+/* Header formázás vége */
+
+/* Második nav formázás eleje */
+#kettonav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+    gap: 20px;
+}
+
+#kettonav ul li {
+    background-color: #e4e4dd;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#kettonav ul li a {
+    text-decoration: none;
+    color: var(--green);
+    display: block;
+    margin: 10px;
+    font-weight: 600;
+    font-size: 15px;
 }
