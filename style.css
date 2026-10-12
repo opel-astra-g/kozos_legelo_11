@@ -126,11 +126,34 @@ header div ul {
     border-radius: 10px;
 }
 
+#kettonav ul li:hover {
+    background-color: rgb(144, 255, 144);
+}
+
 #kettonav ul li a {
     text-decoration: none;
     color: var(--green);
     display: block;
-    margin: 10px;
+    padding: 10px;
     font-weight: 600;
     font-size: 15px;
+}
+/* Második nav formázás vége */
+
+article {
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+}
+
+article section {
+    flex: 1 1 75%;
+    background-color: var(--white);
+    border-radius: 30px;
+    border-top: 1px solid var(--green);
+}
+
+article aside {
+    flex: 1 1 25%;
+    background-color: ;
 }
