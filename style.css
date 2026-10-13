@@ -14,6 +14,7 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
 }
 
 body {
@@ -23,6 +24,11 @@ body {
 main {
     max-width: 1000px;
     margin-inline: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-start;
 }
 
 /* Első nav elem formázás eleje*/
@@ -44,6 +50,7 @@ nav:first-child {
     max-width: 50px;
     max-height: 50px;
     aspect-ratio: 1/1;
+    height: 100%;
 }
 
 nav:first-child div {
@@ -83,8 +90,6 @@ header {
     display: flex;
     background-color: var(--ink);
     color: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
     border-radius: 10px;
     padding: 40px;
     gap: 20px;
@@ -110,6 +115,10 @@ header div ul {
 /* Header formázás vége */
 
 /* Második nav formázás eleje */
+nav {
+    width: 100%;
+}
+
 #kettonav ul {
     display: flex;
     flex-direction: row;
@@ -140,35 +149,52 @@ header div ul {
 }
 /* Második nav formázás vége */
 
-article {
-    margin-top: 30px;
-    display: flex;
-    gap: 20px;
-}
-
-article section {
+section {
     flex: 1 1 75%;
     background-color: var(--white);
     border-radius: 30px;
-    border-top: 1px solid var(--green);
+    border: 1px solid var(--green);
     padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
 }
 
 #cattle {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgb(177, 177, 250);
+    background: linear-gradient(rgb(177, 177, 250) 50%, rgb(144, 255, 144) 50%);
     padding: 30px;
     justify-content: space-around;
     min-height: 250px;
+    border-radius: 15px;
+    flex: 1 1 100%;
 }
 
 #cattle img {
     width: 12%;
 }
 
-article aside {
-    flex: 1 1 25%;
+.info {
+    padding: 10px;
+    flex: 1 1 calc(33% - 10px);
+    background-color: #d3e9b5;
+    border-radius: 10px;
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#thinkaboutit {
+    background-color: #f0c09f;
+    border-left: 4px solid #d77939;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+aside {
+    flex: 1 1 calc(25% - 10px);
     background-color: #d3e9b5;
     border-radius: 30px;
     padding: 20px;
@@ -177,13 +203,31 @@ article aside {
     gap: 15px;
 }
 
-article aside div {
+aside div {
     background-color: var(--white);
     border-left: 2px solid rgb(76, 152, 76);
     border-radius: 10px;
     padding: 15px;
 }
 
-article aside h2, h3 {
+aside h2, h3 {
     font-size: 15px;
+}
+
+#next {
+    position: absolute;
+    top: 850px;
+    left: 1230px;
+    background-color: var(--dark);
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+footer {
+    border-top: 2px solid gray;
+    padding-top: 10px;
+    margin-top: 40px;
 }
