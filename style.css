@@ -1,246 +1,253 @@
 :root {
-    --ink: #24372d;
-    --green: #2c6e50;
-    --dark: #174b38;
-    --mint: #e8f3df;
-    --cream: #f7f7ee;
-    --line: #d6e1d1;
-    --orange: #d77939;
-    --white: #fff;
+  --ink: #24372d;
+  --green: #2c6e50;
+  --dark: #174b38;
+  --mint: #e8f3df;
+  --cream: #f7f7ee;
+  --line: #d6e1d1;
+  --orange: #d77939;
+  --white: #fff;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-    background-color: var(--cream);
+  background-color: var(--cream);
 }
 
 main {
-    max-width: 1000px;
-    margin-inline: auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
-    align-items: flex-start;
+  max-width: 1000px;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: flex-start;
 }
 
 /* Első nav elem formázás eleje*/
 nav:first-child {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #logo {
-    background-color: rgb(144, 255, 144);
-    font-size: 40px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    max-width: 50px;
-    max-height: 50px;
-    aspect-ratio: 1/1;
-    height: 100%;
+  background-color: rgb(144, 255, 144);
+  font-size: 40px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  max-width: 50px;
+  max-height: 50px;
+  aspect-ratio: 1/1;
+  height: 100%;
 }
 
 nav:first-child div {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 nav:first-child div p {
-    white-space: nowrap;
-    align-self: center;
+  white-space: nowrap;
+  align-self: center;
 }
 
 nav:first-child div ul {
-    display: flex;
-    gap: 10px;
-    list-style-type: none;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  list-style-type: none;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 nav:first-child div ul li a {
-    text-decoration: none;
-    color: black;
-    display: block;
-    padding: 10px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
 }
 
 nav:first-child div ul li a:hover {
-    background-color: black;   
-    border-radius: 10px;
-    color: white;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
 }
 /* Első nav elem formázás vége*/
 
 /* Header formázás eleje */
 header {
-    display: flex;
-    background-color: var(--ink);
-    color: white;
-    border-radius: 10px;
-    padding: 40px;
-    gap: 20px;
+  display: flex;
+  background-color: var(--ink);
+  color: white;
+  border-radius: 10px;
+  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+header div:first-child {
+  flex: 1 1 50%;
 }
 
 header p:first-child {
-    color: rgb(144, 255, 144);
+  color: rgb(144, 255, 144);
 }
 
 header #koc {
-    border: 2px solid rgb(144, 255, 144);
-    border-radius: 20px;
-    padding: 20px;
-    background-color: #395c49;
+  border: 2px solid rgb(144, 255, 144);
+  border-radius: 20px;
+  padding: 20px;
+  background-color: #395c49;
 }
 
 header div ul {
-    list-style-type: none;
-    color: rgb(144, 255, 144);
-    font-weight: 900;
-    font-size: 25px;
+  list-style-type: none;
+  color: rgb(144, 255, 144);
+  font-weight: 900;
+  font-size: 25px;
 }
 /* Header formázás vége */
 
 /* Második nav formázás eleje */
 nav {
-    width: 100%;
+  width: 100%;
 }
 
 #kettonav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    list-style-type: none;
-    gap: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 #kettonav ul li {
-    background-color: #e4e4dd;
-    text-align: center;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
+  background-color: #e4e4dd;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  flex: 1 1 calc(25% - 20px);
 }
 
 #kettonav ul li:hover {
-    background-color: rgb(144, 255, 144);
+  background-color: rgb(144, 255, 144);
 }
 
 #kettonav ul li a {
-    text-decoration: none;
-    color: var(--green);
-    display: block;
-    padding: 10px;
-    font-weight: 600;
-    font-size: 15px;
+  text-decoration: none;
+  color: var(--green);
+  display: block;
+  padding: 10px;
+  font-weight: 600;
+  font-size: 15px;
 }
 /* Második nav formázás vége */
 
 section {
-    flex: 1 1 75%;
-    background-color: var(--white);
-    border-radius: 30px;
-    border: 1px solid var(--green);
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 10px;
+  flex: 1 1 75%;
+  background-color: var(--white);
+  border-radius: 30px;
+  border: 1px solid var(--green);
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 10px;
 }
 
 #cattle {
-    display: flex;
-    flex-wrap: wrap;
-    background: linear-gradient(rgb(177, 177, 250) 50%, rgb(144, 255, 144) 50%);
-    padding: 30px;
-    justify-content: space-around;
-    min-height: 250px;
-    border-radius: 15px;
-    flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(rgb(177, 177, 250) 50%, rgb(144, 255, 144) 50%);
+  padding: 30px;
+  justify-content: space-around;
+  min-height: 250px;
+  border-radius: 15px;
+  flex: 1 1 100%;
 }
 
 #cattle img {
-    width: 12%;
+  width: 12%;
 }
 
 .info {
-    padding: 10px;
-    flex: 1 1 calc(33% - 10px);
-    background-color: #d3e9b5;
-    border-radius: 10px;
-    gap: 10px;
-    display: flex;
-    flex-direction: column;
+  padding: 10px;
+  flex: 1 1 calc(33% - 10px);
+  background-color: #d3e9b5;
+  border-radius: 10px;
+  gap: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 #thinkaboutit {
-    background-color: #f0c09f;
-    border-left: 4px solid #d77939;
-    border-radius: 10px;
-    padding: 10px;
+  background-color: #f0c09f;
+  border-left: 4px solid #d77939;
+  border-radius: 10px;
+  padding: 10px;
 }
 
 aside {
-    flex: 1 1 calc(25% - 10px);
-    background-color: #d3e9b5;
-    border-radius: 30px;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+  flex: 1 1 calc(25% - 10px);
+  background-color: #d3e9b5;
+  border-radius: 30px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
 aside div {
-    background-color: var(--white);
-    border-left: 2px solid rgb(76, 152, 76);
-    border-radius: 10px;
-    padding: 15px;
+  background-color: var(--white);
+  border-left: 2px solid rgb(76, 152, 76);
+  border-radius: 10px;
+  padding: 15px;
 }
 
-aside h2, h3 {
-    font-size: 15px;
+aside h2,
+h3 {
+  font-size: 15px;
 }
 
 #next {
-    background-color: var(--dark);
-    color: white;
-    padding: 15px;
-    text-decoration: none;
-    border-radius: 10px;
-    font-size: 14px;
-    margin-left: auto;
+  background-color: var(--dark);
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 14px;
+  margin-left: auto;
 }
 
 footer {
-    border-top: 2px solid gray;
-    padding-top: 10px;
-    margin-top: 40px;
+  border-top: 2px solid gray;
+  padding-top: 10px;
+  margin-top: 40px;
 }
 
 /*Form:*/
 
 fieldset {
-    width: 100%;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-    padding: 10px;
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  padding: 10px;
 }
 
 textarea {
-    height: 150px;
-    padding: 10px;
+  height: 150px;
+  padding: 10px;
 }
